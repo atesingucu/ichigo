@@ -1,4 +1,6 @@
 ## Türkçe
+
+
 **Ichigo**, Japonca kökenlidir. Temamız çilek motifleriyle süslenmiş tek sayfalık bir portföy yeteneğine sahiptir. Temayı yaparken, **HTML5, CSS3** ve JS **JS** teknolojilerini kullandık. Resmi olarak ikinci temamız olmasına rağmen, ilk HTML5 teması olarak yayınlanan ilk temamızdır.
 
 Temayı tasarlarken, çilekleri elimizden geldiğince kullanmaya özen gösterdik. Böylece, basit olmasına rağmen, farklı bir tat sunmaya çalştık. Temada 2 farklı yazı tip kullanılmakta. Japonca yazılar için **Motomachi**. Latin alfabeler içinse **Cloud** tercih edilmiştir. Son olarak yer tutucu metin bulunmamaktadır.
