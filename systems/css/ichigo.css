@@ -1,0 +1,281 @@
+/* Theme Name: Ichigo 🍓 */
+/* Japanese: 苺 */
+/* Version: v1.00 */
+/* Created By: Atesin Gucu */
+/* Web Site: https://atesingucu.com.tr */
+/* About: Ichigo, which means "Strawberry" in Japanese, is a single-page portfolio theme adorned entirely with strawberry motifs. It offers the ability to present contents in a popup window. While designing the theme, we utilized Bootstrap and Ajax technologies. Despite this being our second official theme, it is the first to be released as an HTML5 theme.
+
+In designing the theme, we took care to incorporate elements of Japanese culture, ensuring it remains both simple and feature-rich. The theme includes two different font choices: Motomachi for Japanese and Cloud for other Latin languages. There is no placeholder text within the theme. */
+/* License: MIT */
+/* Price: Free */
+/* Mail: atesingucu@yandex.com.tr */
+
+/* Font */
+
+.japon { font-family: "Motomachi Medium", sans-serif; }
+.latin { font-family: "Cloud Regular", sans-serif; }
+
+@font-face {
+font-family: "Motomachi Medium";
+src:url("../fonts/motomachi.ttf");
+}
+
+@font-face {
+font-family: "Cloud Regular";
+src:url("../fonts/cloud.otf");
+}
+
+/* Color Schema */
+
+.menu-events a, .oval-button, .listen-button, button[type="submit"]:hover, button[type="submit"] {
+color: #ffcccc;
+}
+
+code {
+display: inline-flex; 
+background-color: #ffcccc;
+color: #4b4b4b;
+}
+
+/* Body */
+
+a {
+text-decoration: none;
+color: #4b4b4b;
+}
+
+body, .form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea  {
+font-family: "Cloud Regular", sans-serif;
+font-size: 18px;
+}
+
+.svg {
+font-size: 1.5rem;
+}
+
+img {
+width: 100%;
+}
+
+.ichigo-h1, h2, .ichigo-h2, h3, .ichigo-h3, h4, .ichigo-h4, h5, .ichigo-h5, h6, .ichigo-h6 {
+text-align: center;
+}
+
+h2, .ichigo-h2, h3, .ichigo-h3, h4, .ichigo-h4, h5, .ichigo-h5, h6, .ichigo-h6 {
+padding-top: 16px;
+padding-bottom: 16px;
+}
+
+
+.ichigo-h1 {
+padding-top: 50px;
+padding-bottom: 50px;
+font-size: 2rem;
+}
+
+/* Logo */
+
+.ichigo, .ichigo-senpai, .menu-events {
+display: inline-flex; 
+justify-content: center; 
+align-items: center; 
+}
+
+.ichigo-senpai, .ichigo {
+width: 6rem;
+height: 6rem;
+border-radius: 50%; 
+font-size: 3.5rem; 
+color: white;
+text-align: center;
+}
+
+.ichigo {
+margin-top: 0px;
+}
+
+.ichigo-senpai {
+margin-top: -20px; 
+}
+
+
+/* Menu */
+
+.menu-events {
+border-bottom-left-radius: 20px; 
+border-bottom-right-radius: 20px;
+padding: 20px; 
+margin-top: -50px; 
+}
+
+
+.site-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-left: 70px;
+padding-right: 80px;
+}
+
+.menu {
+font-size: 2rem;
+display: flex;
+list-style-type: none; 
+}
+
+.menu li {
+margin-right: 10px; 
+}
+
+.menu li:last-child {
+margin-right: 0; 
+}
+
+
+@media (max-width: 767px) {
+  .menu, .menu-events, .menu .text {
+    display: none;
+  }
+
+  ion-icon {
+    font-size: 20px;
+  }
+}
+
+
+/* Grid */
+
+.container {
+display: flex;
+flex-wrap: wrap;
+padding-left: 80px;
+padding-right: 80px; 
+padding-top: 50px;
+padding-bottom: 20px;
+position: relative;
+z-index: 1;
+}
+
+.container::before {
+content: "";
+background-image: url('../images/bg.webp');
+background-size: cover; 
+background-position: center; 
+opacity: 0.5; 
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: -1;
+border-radius: 20px;
+}
+
+.sidebar {
+flex: 1; 
+}
+
+.content {
+flex: 14;
+margin-right: 220px;
+}
+
+.projectable {
+flex: 5;
+}
+
+.contact {
+flex: 8;
+position: relative;
+padding: 20px;
+}
+
+.content, .projectable, .contact {
+position: relative;
+padding: 20px;
+}
+
+/* Button */
+
+.oval-button, .listen-button, .menu-events, .ichigo, .ichigo-senpai, button[type="submit"]:hover, button[type="submit"] {
+background: red;
+}
+
+.oval-button, .listen-button, button[type="submit"]:hover, button[type="submit"]  {
+position: absolute;
+margin-bottom: 30px;
+border-radius: 30px;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+}
+
+.oval-button {
+right: 20px;
+}
+
+.listen-button {
+position: absolute;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+/*  Form */
+.form-group {
+margin-bottom: 20px;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+width: 100%;
+padding: 10px;
+background: #ff3838;
+color: #ffcccc;
+border-radius: 4px;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+.ichigo, .ichigo-senpai {
+       display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.ichigo, .ichigo-senpai, .oval-button, .listen-button {
+margin: auto;
+}
+
+    .container, .content, .projectable, .contact, .sidebar, .form-group input, .form-group textarea
+ {
+        width: 100%; /* Genişliği tüm alana yay */
+        margin: 0 auto; /* Merkezle */
+        padding: 15px; /* İçerik için padding */
+        box-sizing: border-box; /* Padding ve border'ı genişlik hesaplamasına dahil et */
+        display: block; /* Block düzeni sağla */
+        text-align: center;
+    }
+
+.img, .oval-button, .listen-button {
+        padding-top: 10px;
+        padding-bottom: 10px;
+}
+
+    /* Form elementlerinin genişliğini düzelt */
+    .form-group input, .form-group textarea {
+        width: calc(100% - 30px); /* Doğru genişlik hesaplaması */
+    }
+
+    /* İsteğe bağlı olarak, mobilde özel ayarlamalar yapabilirsiniz */
+    .content, .projectable, .contact, .sidebar {
+        text-align: left; /* Metin hizalamasını ayarla */
+    }
+}
